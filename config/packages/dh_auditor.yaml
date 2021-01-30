@@ -1,0 +1,13 @@
+dh_auditor:
+    enabled: true
+    timezone: 'Europe/Berlin'
+    providers:
+        doctrine:
+            table_prefix: ~
+            table_suffix: '_audit'
+            ignored_columns:
+                - id
+                - createdAt
+                - updatedAt
+            entities:
+                App\Entity\Post: ~

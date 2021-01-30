@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Auditor Bundle Test{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h1>Entity page: <a href="{{ path('post_index') }}">here</a></h1>
+    <h1>Audit log: <a href="{{ path('dh_auditor_list_audits') }}">here</a></h1>
+</div>
+{% endblock %}
